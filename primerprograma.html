@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Primer programa JavaScript Sugey </title>
+</head>
+<body style="background:#EEE">
+
+<script lenguage="javascript">
+var numero1 = prompt("Ingrese Su Primer Numero: ");
+var numero2 = prompt("Ingrese Su Segundo Numero: ");
+var numero3 = prompt("Ingrese Su Tercer Numero: ");
+
+numero1=parseFloat(numero1);
+numero2=parseFloat(numero2);
+numero3=parseFloat(numero3);
+
+if (numero1 == numero2 && numero1 == numero3){
+   document.write("El primer, segundo y tercer numero son iguales! y su valor es: "+numero1+"");
+   }
+   else{
+     
+      if (numero1 > numero2){
+         if (numero1 > numero3){
+            document.write("El primer numero  es Mayor y su valor es: "+numero1+"");
+            }
+            else{
+               document.write("El tercer numero  es Mayor y su valor es: "+numero3+"");
+               }
+      }
+      else{
+         if(numero1 < numero2){
+            if (numero2 > numero3){
+               document.write("El segundo numero  es Mayor y su valor es: "+numero2+"");
+               }
+               else{
+                  document.write("El tercer numero  es Mayor y su valor es: "+numero3+"");
+                  }
+            }
+         }
+   }
+   
+   document.write(";   Primer Numero  = "+numero1+",   "+"Segundo Numero  = "+numero2+",   "+"Tercer Numero  = "+numero3);
+</script>
+
+</body>
+</html>
